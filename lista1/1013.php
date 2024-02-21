@@ -2,7 +2,7 @@
 
 $e = explode (" ",fgets(STDIN));
 
-$A = floatval($e[0]);
+$A = floatval($e[0]);//transformando o $e em float para variavel funcionar em função abs//
 $B = floatval($e[1]);
 $C = floatval($e[2]);
 

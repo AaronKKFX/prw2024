@@ -1,11 +1,11 @@
 <?php
-$din = intval(readline());
+$din = intval(readline()); // entrada dinheiro//
 
-$nc = number_format(floor($din/100),0,",","");
-$rc = $din%100;
+$nc = number_format(floor($din/100),0,",",""); //divisão para quantidade de notas "floor" para arredondar para baixo//
+$rc = $din%100;                                // resto da divisão para continuar o calculo//
 
-$nci = number_format(floor($rc/50),0,",","");
-$rci = $rc%50;
+$nci = number_format(floor($rc/50),0,",","");//resto sendo usado para continuar o calculo//
+$rci = $rc%50; //repete tudo//
 
 $nv = number_format(floor($rci/20),0,",","");
 $rv = $rci%20;

@@ -1,11 +1,11 @@
 <?php
-$din = floatval(readline());
+$din = floatval(readline()); //valor do dinheiro total //
 
-$nc = number_format(floor($din/100),0,".","");
-$rc = $din%100;
+$nc = number_format(floor($din/100),0,".",""); //divisão e floor para aredondar para o menor número que pode ser dividido para não dar erro de compilação//
+$rc = $din%100; // resto da divisão para continuar o calculo//
 
-$nci = number_format(floor($rc/50),0,".","");
-$rci = $rc%50;
+$nci = number_format(floor($rc/50),0,".",""); //$r é o resto da divisão para continuar o calculo//
+$rci = $rc%50; // resto da divisão para continuar//
 
 $nv = number_format(floor($rci/20),0,".","");
 $rv = $rci%20;
@@ -19,11 +19,12 @@ $rcin = $rd%5;
 $ndo = number_format(floor($rcin/2),0,".","");
 $rdo = $rcin%2;
 
-$mu = number_format(floor($rdo/1),0,".","");
+$mu = number_format(floor($rdo/1),0,".",""); // ao chegar nos centavos é necessário multiplicar o valor original por 100 e pegar o resto de 
+                                            //divisão 100 para sobrar somente os centavos//
 $rmu = ($din*100)%100;
 
-$mci = number_format(floor($rmu/50),0,".","");
-$rmci = $rmu%50;
+$mci = number_format(floor($rmu/50),0,".",""); // continua a divisão com inteiros pois multiplicou por 100//
+$rmci = $rmu%50;                               // resto tbm em inteiro//
 
 $mv = number_format(floor($rmci/25),0,".","");
 $rmv = $rmci%25;
