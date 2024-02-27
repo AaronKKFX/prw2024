@@ -1,0 +1,15 @@
+div{
+    margin :10px;
+    width: 20%;
+    height: 40px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+}
+button{
+    margin:10px;
+}
+body{ 
+    background-color: darkgrey;
+}
+
