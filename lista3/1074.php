@@ -2,7 +2,7 @@
 
 $x = intval(readline());
 
-for($i=0;$i<=$x;$i++)
+for($i=0;$i<$x;$i++)
 {
     $n = intval(readline());
     
@@ -33,4 +33,22 @@ for($i=0;$i<=$x;$i++)
         }
     }
 }
+/*$x = intval(readline());
+
+for($i=0;$i<$x;$i++)
+{
+    $n = intval(readline());
+    
+    if($n ==0)
+    {
+        echo"NULL\n";
+    }
+    else if($n%2 == 0)
+    {
+        echo ($x>0? "EVEN POSITIVE" : "EVEN NEGATIVE");
+    }
+    else
+    {
+         echo ($x>0? "ODD POSITIVE" : "ODD NEGATIVE");
+    }*/ 
 ?>
